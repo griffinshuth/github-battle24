@@ -2,10 +2,12 @@ const express = require('express');
 const helmet = require('helmet');
 const logger = require('morgan');
 
-const supplyRouter = requre('./supply_router.js')
+const supplyRouter = requre('./supply_router.js');
+
+console.log('env', process.env.PORT)
 
 const server = express();
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 
 const customMW = require('./custom_middleware');
 console.log('custome MW', customMW);
