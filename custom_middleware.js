@@ -7,4 +7,4 @@ const gatekeeper =(req, res, next) =>{
     }
 }
 
-module.exports.gatekeeper = gatekeeper
+module.exports.gatekeeper = gatekeepeR
